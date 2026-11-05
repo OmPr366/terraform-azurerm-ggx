@@ -254,7 +254,7 @@ resource "azurerm_container_app" "app" {
     # Nginx container (sidecar - reverse proxy/routing)
     container {
       name   = "nginx"
-      image  = "nginx:1.25-alpine"
+      image  = "nginx:stable-alpine"
       cpu    = 0.25
       memory = "0.5Gi"
 
